@@ -1,0 +1,5 @@
+# ads.txt - Google AdSense / Google Ad Manager
+# 1) Sustituye pub-0000000000000000 por tu ID de editor real (AdSense > Cuenta > Informacion de la cuenta).
+# 2) Conserva el formato: dominio, ID-editor, relacion, ID-certificacion
+# 3) No cambies f08c47fec0942fa0 (ID de certificacion TAG de Google).
+google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0

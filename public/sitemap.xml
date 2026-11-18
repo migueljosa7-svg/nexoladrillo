@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://tu-dominio.vercel.app/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tu-dominio.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tu-dominio.vercel.app/en"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tu-dominio.vercel.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tu-dominio.vercel.app/de"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tu-dominio.vercel.app/pt"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tu-dominio.vercel.app/it"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tu-dominio.vercel.app/"/>
+  </url>
+  <url>
+    <loc>https://tu-dominio.vercel.app/en</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tu-dominio.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tu-dominio.vercel.app/en"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tu-dominio.vercel.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tu-dominio.vercel.app/de"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tu-dominio.vercel.app/pt"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tu-dominio.vercel.app/it"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tu-dominio.vercel.app/"/>
+  </url>
+  <url>
+    <loc>https://tu-dominio.vercel.app/fr</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tu-dominio.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tu-dominio.vercel.app/en"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tu-dominio.vercel.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tu-dominio.vercel.app/de"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tu-dominio.vercel.app/pt"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tu-dominio.vercel.app/it"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tu-dominio.vercel.app/"/>
+  </url>
+  <url>
+    <loc>https://tu-dominio.vercel.app/de</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tu-dominio.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tu-dominio.vercel.app/en"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tu-dominio.vercel.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tu-dominio.vercel.app/de"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tu-dominio.vercel.app/pt"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tu-dominio.vercel.app/it"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tu-dominio.vercel.app/"/>
+  </url>
+  <url>
+    <loc>https://tu-dominio.vercel.app/pt</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tu-dominio.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tu-dominio.vercel.app/en"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tu-dominio.vercel.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tu-dominio.vercel.app/de"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tu-dominio.vercel.app/pt"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tu-dominio.vercel.app/it"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tu-dominio.vercel.app/"/>
+  </url>
+  <url>
+    <loc>https://tu-dominio.vercel.app/it</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tu-dominio.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tu-dominio.vercel.app/en"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tu-dominio.vercel.app/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tu-dominio.vercel.app/de"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tu-dominio.vercel.app/pt"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://tu-dominio.vercel.app/it"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tu-dominio.vercel.app/"/>
+  </url>
+</urlset>

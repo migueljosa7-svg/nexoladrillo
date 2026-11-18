@@ -1,0 +1,24 @@
+# Nexo Translate - robots.txt
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: AdsBot-Google-Mobile
+Allow: /
+
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: *
+Allow: /
+
+# Reemplaza tu-dominio.vercel.app por tu dominio definitivo
+Sitemap: https://tu-dominio.vercel.app/sitemap.xml
