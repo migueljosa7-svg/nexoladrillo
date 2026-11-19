@@ -1,0 +1,8 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-0.8891, 41.6488] }, "properties": { "id": "rem2-zgz-01", "title": "Piso en el Paseo Independencia", "city": "Zaragoza", "zone": "Centro", "operation": "alquiler", "price": 260000, "fundedPct": 52, "minInvestment": 100, "yield": 6.3, "description": "Vivienda céntrica de 120 m²." } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [-4.4214, 36.7213] }, "properties": { "id": "rem2-agp-01", "title": "Piso en el Centro de Málaga", "city": "Málaga", "zone": "Centro", "operation": "alquiler", "price": 245000, "fundedPct": 35, "minInvestment": 100, "yield": 7.1, "description": "Vivienda reformada junto a calle Larios." } },
+    { "type": "Feature", "geometry": null, "properties": null }
+  ]
+}

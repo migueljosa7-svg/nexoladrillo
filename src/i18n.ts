@@ -1,99 +1,84 @@
 import { UI_LANGS, type UiLang } from './config'
 
 export interface Dict {
-  navDemo: string
-  navIntegrations: string
-  navEditor: string
-  navRoi: string
-  navPricing: string
+  navInvest: string
+  navHow: string
+  navPortfolio: string
+  navSim: string
   navFaq: string
+  navContact: string
   cta: string
-  login: string
   badge: string
   h1a: string
   h1b: string
   sub: string
   ctaPrimary: string
   ctaSecondary: string
-  noCard: string
+  risk: string
   title: string
   description: string
-  finalTitle: string
-  finalSub: string
 }
 
 export const DICT: Record<UiLang, Dict> = {
   es: {
-    navDemo: 'Demo', navIntegrations: 'Integraciones', navEditor: 'Editor IA', navRoi: 'Calculadora ROI', navPricing: 'Precios', navFaq: 'FAQ',
-    cta: 'Prueba gratis', login: 'Acceder',
-    badge: 'Un 10 % más barato que Weglot, garantizado',
-    h1a: 'Traduce tu web en +110 idiomas.', h1b: 'Sin código, en 2 minutos.',
-    sub: 'Nexo Translate traduce, posiciona y localiza tu web con IA. SEO multilingüe automático, editor visual y precios un 10 % por debajo de Weglot.',
-    ctaPrimary: 'Empezar gratis 14 días', ctaSecondary: 'Ver precios',
-    noCard: 'Sin tarjeta · Cancela cuando quieras',
-    title: 'Nexo Translate: traducción web con IA y SEO multilingüe | -10 % vs Weglot',
-    description: 'Traduce tu web a +110 idiomas con IA en 2 minutos y sin código. SEO multilingüe automático, glosario de marca y planes desde 0 €, un 10 % más baratos que Weglot.',
-    finalTitle: 'Tu próximo cliente habla otro idioma', finalSub: 'Empieza gratis hoy y publica tu primera traducción en 2 minutos.',
+    navInvest: 'Invertir', navHow: 'Cómo funciona', navPortfolio: 'Portfolio', navSim: 'Simulador', navFaq: 'FAQ', navContact: 'Contacto',
+    cta: 'Ver oportunidades', badge: 'Inversión inmobiliaria desde 50 €',
+    h1a: 'Invierte en inmuebles', h1b: 'cerca de ti o en cualquier ciudad.',
+    sub: 'Tú inviertes, nosotros hacemos el resto: elegimos, gestionamos y alquilamos o vendemos el inmueble. Tú sigues tu rentabilidad.',
+    ctaPrimary: 'Explorar inmuebles', ctaSecondary: 'Simular ganancias',
+    risk: 'Invertir conlleva riesgo de pérdida de capital. Las rentabilidades son estimaciones y no están garantizadas.',
+    title: 'NexoLadrillo: invierte en inmuebles desde 50 € | Busca cerca de ti',
+    description: 'Invierte en alquiler y compraventa de inmuebles desde 50 €. Busca por ciudad, barrio o cerca de tu ubicación, simula tus ganancias y sigue tu portfolio.',
   },
   en: {
-    navDemo: 'Demo', navIntegrations: 'Integrations', navEditor: 'AI Editor', navRoi: 'ROI calculator', navPricing: 'Pricing', navFaq: 'FAQ',
-    cta: 'Try for free', login: 'Log in',
-    badge: '10% cheaper than Weglot, guaranteed',
-    h1a: 'Translate your website into 110+ languages.', h1b: 'No code, in 2 minutes.',
-    sub: 'Nexo Translate translates, ranks and localizes your site with AI. Automatic multilingual SEO, a visual editor and prices 10% below Weglot.',
-    ctaPrimary: 'Start free for 14 days', ctaSecondary: 'See pricing',
-    noCard: 'No credit card · Cancel anytime',
-    title: 'Nexo Translate: AI website translation & multilingual SEO | 10% off Weglot',
-    description: 'Translate your website into 110+ languages with AI in 2 minutes, no code. Automatic multilingual SEO, brand glossary and plans from €0, 10% cheaper than Weglot.',
-    finalTitle: 'Your next customer speaks another language', finalSub: 'Start free today and publish your first translation in 2 minutes.',
+    navInvest: 'Invest', navHow: 'How it works', navPortfolio: 'Portfolio', navSim: 'Simulator', navFaq: 'FAQ', navContact: 'Contact',
+    cta: 'See opportunities', badge: 'Real estate investing from €50',
+    h1a: 'Invest in property', h1b: 'near you or in any city.',
+    sub: 'You invest, we do the rest: we select, manage and rent or sell the property. You track your return.',
+    ctaPrimary: 'Explore properties', ctaSecondary: 'Simulate earnings',
+    risk: 'Investing involves risk of capital loss. Returns are estimates and are not guaranteed.',
+    title: 'NexoLadrillo: invest in real estate from €50 | Search near you',
+    description: 'Invest in rental and buy-to-sell property from €50. Search by city, neighbourhood or near your location, simulate earnings and track your portfolio.',
   },
   fr: {
-    navDemo: 'Démo', navIntegrations: 'Intégrations', navEditor: 'Éditeur IA', navRoi: 'Calculateur ROI', navPricing: 'Tarifs', navFaq: 'FAQ',
-    cta: 'Essai gratuit', login: 'Connexion',
-    badge: '10 % moins cher que Weglot, garanti',
-    h1a: 'Traduisez votre site en 110+ langues.', h1b: 'Sans code, en 2 minutes.',
-    sub: 'Nexo Translate traduit, référence et localise votre site avec l’IA. SEO multilingue automatique, éditeur visuel et tarifs 10 % sous Weglot.',
-    ctaPrimary: 'Essai gratuit 14 jours', ctaSecondary: 'Voir les tarifs',
-    noCard: 'Sans carte bancaire · Annulez à tout moment',
-    title: 'Nexo Translate : traduction de site web par IA et SEO multilingue | -10 % vs Weglot',
-    description: 'Traduisez votre site en 110+ langues avec l’IA en 2 minutes, sans code. SEO multilingue automatique, glossaire de marque et offres dès 0 €, 10 % moins cher que Weglot.',
-    finalTitle: 'Votre prochain client parle une autre langue', finalSub: 'Commencez gratuitement et publiez votre première traduction en 2 minutes.',
+    navInvest: 'Investir', navHow: 'Comment ça marche', navPortfolio: 'Portefeuille', navSim: 'Simulateur', navFaq: 'FAQ', navContact: 'Contact',
+    cta: 'Voir les offres', badge: 'Investissement immobilier dès 50 €',
+    h1a: 'Investissez dans l’immobilier', h1b: 'près de chez vous ou dans toute ville.',
+    sub: 'Vous investissez, nous faisons le reste : nous sélectionnons, gérons et louons ou vendons le bien. Vous suivez votre rendement.',
+    ctaPrimary: 'Explorer les biens', ctaSecondary: 'Simuler les gains',
+    risk: 'Investir comporte un risque de perte en capital. Les rendements sont des estimations non garanties.',
+    title: 'NexoLadrillo : investissez dans l’immobilier dès 50 € | Recherche à proximité',
+    description: 'Investissez dans la location et la revente immobilière dès 50 €. Recherchez par ville, quartier ou près de vous, simulez vos gains et suivez votre portefeuille.',
   },
   de: {
-    navDemo: 'Demo', navIntegrations: 'Integrationen', navEditor: 'KI-Editor', navRoi: 'ROI-Rechner', navPricing: 'Preise', navFaq: 'FAQ',
-    cta: 'Kostenlos testen', login: 'Anmelden',
-    badge: '10 % günstiger als Weglot – garantiert',
-    h1a: 'Übersetzen Sie Ihre Website in 110+ Sprachen.', h1b: 'Ohne Code, in 2 Minuten.',
-    sub: 'Nexo Translate übersetzt, rankt und lokalisiert Ihre Website mit KI. Automatisches mehrsprachiges SEO, visueller Editor und Preise 10 % unter Weglot.',
-    ctaPrimary: '14 Tage kostenlos starten', ctaSecondary: 'Preise ansehen',
-    noCard: 'Keine Kreditkarte · Jederzeit kündbar',
-    title: 'Nexo Translate: KI-Website-Übersetzung & mehrsprachiges SEO | 10 % günstiger als Weglot',
-    description: 'Übersetzen Sie Ihre Website mit KI in 2 Minuten in 110+ Sprachen – ohne Code. Automatisches Multilingual-SEO, Markenglossar und Tarife ab 0 €, 10 % günstiger als Weglot.',
-    finalTitle: 'Ihr nächster Kunde spricht eine andere Sprache', finalSub: 'Starten Sie heute kostenlos und veröffentlichen Sie Ihre erste Übersetzung in 2 Minuten.',
+    navInvest: 'Investieren', navHow: 'So funktioniert’s', navPortfolio: 'Portfolio', navSim: 'Simulator', navFaq: 'FAQ', navContact: 'Kontakt',
+    cta: 'Angebote ansehen', badge: 'Immobilieninvestition ab 50 €',
+    h1a: 'Investieren Sie in Immobilien', h1b: 'in Ihrer Nähe oder in jeder Stadt.',
+    sub: 'Sie investieren, wir erledigen den Rest: Wir wählen aus, verwalten und vermieten oder verkaufen die Immobilie. Sie verfolgen Ihre Rendite.',
+    ctaPrimary: 'Immobilien entdecken', ctaSecondary: 'Erträge simulieren',
+    risk: 'Investieren birgt das Risiko eines Kapitalverlusts. Renditen sind Schätzungen und nicht garantiert.',
+    title: 'NexoLadrillo: Immobilien-Investment ab 50 € | Suche in Ihrer Nähe',
+    description: 'Investieren Sie ab 50 € in Vermietung und Verkauf von Immobilien. Suchen Sie nach Stadt, Viertel oder in Ihrer Nähe, simulieren Sie Erträge und verfolgen Sie Ihr Portfolio.',
   },
   pt: {
-    navDemo: 'Demo', navIntegrations: 'Integrações', navEditor: 'Editor IA', navRoi: 'Calculadora ROI', navPricing: 'Preços', navFaq: 'FAQ',
-    cta: 'Experimente grátis', login: 'Entrar',
-    badge: '10 % mais barato que o Weglot, garantido',
-    h1a: 'Traduza o seu site para +110 idiomas.', h1b: 'Sem código, em 2 minutos.',
-    sub: 'O Nexo Translate traduz, posiciona e localiza o seu site com IA. SEO multilingue automático, editor visual e preços 10 % abaixo do Weglot.',
-    ctaPrimary: 'Começar grátis 14 dias', ctaSecondary: 'Ver preços',
-    noCard: 'Sem cartão · Cancele quando quiser',
-    title: 'Nexo Translate: tradução de sites com IA e SEO multilingue | -10 % vs Weglot',
-    description: 'Traduza o seu site para +110 idiomas com IA em 2 minutos, sem código. SEO multilingue automático, glossário de marca e planos desde 0 €, 10 % mais baratos que o Weglot.',
-    finalTitle: 'O seu próximo cliente fala outro idioma', finalSub: 'Comece grátis hoje e publique a sua primeira tradução em 2 minutos.',
+    navInvest: 'Investir', navHow: 'Como funciona', navPortfolio: 'Portfólio', navSim: 'Simulador', navFaq: 'FAQ', navContact: 'Contacto',
+    cta: 'Ver oportunidades', badge: 'Investimento imobiliário desde 50 €',
+    h1a: 'Invista em imóveis', h1b: 'perto de si ou em qualquer cidade.',
+    sub: 'Você investe, nós fazemos o resto: selecionamos, gerimos e arrendamos ou vendemos o imóvel. Acompanha a sua rentabilidade.',
+    ctaPrimary: 'Explorar imóveis', ctaSecondary: 'Simular ganhos',
+    risk: 'Investir implica risco de perda de capital. As rentabilidades são estimativas e não são garantidas.',
+    title: 'NexoLadrillo: invista em imóveis desde 50 € | Pesquise perto de si',
+    description: 'Invista em arrendamento e compra e venda de imóveis desde 50 €. Pesquise por cidade, bairro ou perto de si, simule ganhos e acompanhe o seu portfólio.',
   },
   it: {
-    navDemo: 'Demo', navIntegrations: 'Integrazioni', navEditor: 'Editor IA', navRoi: 'Calcolatore ROI', navPricing: 'Prezzi', navFaq: 'FAQ',
-    cta: 'Prova gratis', login: 'Accedi',
-    badge: '10 % più economico di Weglot, garantito',
-    h1a: 'Traduci il tuo sito in 110+ lingue.', h1b: 'Senza codice, in 2 minuti.',
-    sub: 'Nexo Translate traduce, posiziona e localizza il tuo sito con l’IA. SEO multilingua automatico, editor visuale e prezzi del 10 % sotto Weglot.',
-    ctaPrimary: 'Inizia gratis per 14 giorni', ctaSecondary: 'Vedi i prezzi',
-    noCard: 'Senza carta · Annulla quando vuoi',
-    title: 'Nexo Translate: traduzione siti web con IA e SEO multilingua | -10 % vs Weglot',
-    description: 'Traduci il tuo sito in 110+ lingue con l’IA in 2 minuti, senza codice. SEO multilingua automatico, glossario di marca e piani da 0 €, il 10 % più economici di Weglot.',
-    finalTitle: 'Il tuo prossimo cliente parla un’altra lingua', finalSub: 'Inizia gratis oggi e pubblica la tua prima traduzione in 2 minuti.',
+    navInvest: 'Investire', navHow: 'Come funziona', navPortfolio: 'Portafoglio', navSim: 'Simulatore', navFaq: 'FAQ', navContact: 'Contatto',
+    cta: 'Vedi le opportunità', badge: 'Investimento immobiliare da 50 €',
+    h1a: 'Investi in immobili', h1b: 'vicino a te o in qualsiasi città.',
+    sub: 'Tu investi, noi facciamo il resto: selezioniamo, gestiamo e affittiamo o vendiamo l’immobile. Tu segui il tuo rendimento.',
+    ctaPrimary: 'Esplora gli immobili', ctaSecondary: 'Simula i guadagni',
+    risk: 'Investire comporta il rischio di perdita del capitale. I rendimenti sono stime non garantite.',
+    title: 'NexoLadrillo: investi in immobili da 50 € | Cerca vicino a te',
+    description: 'Investi in affitto e compravendita di immobili da 50 €. Cerca per città, quartiere o vicino a te, simula i guadagni e segui il tuo portafoglio.',
   },
 }
 

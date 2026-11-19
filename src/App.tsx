@@ -1,23 +1,24 @@
 import { lazy, Suspense, useCallback, useEffect, useState } from 'react'
 import { langFromPath } from './i18n'
 import { langPath, type UiLang } from './config'
+import type { Property } from './services/properties/types'
 import SeoHead from './components/SeoHead'
 import Navbar from './components/Navbar'
+import InvestModal from './components/InvestModal'
 import Hero from './sections/Hero'
-import Marquee from './sections/Marquee'
-import Integrations from './sections/Integrations'
+import Catalog from './sections/Catalog'
+import HowItWorks from './sections/HowItWorks'
+import Faq from './sections/Faq'
+import Contact from './sections/Contact'
 import Footer from './sections/Footer'
-import SignupModal from './components/SignupModal'
 
-// Secciones pesadas (recharts, etc.) con carga diferida
-const VisualEditor = lazy(() => import('./sections/VisualEditor'))
-const RoiCalculator = lazy(() => import('./sections/RoiCalculator'))
-const Pricing = lazy(() => import('./sections/Pricing'))
-const Faq = lazy(() => import('./sections/Faq'))
+// Secciones con Recharts: carga diferida
+const PortfolioDemo = lazy(() => import('./sections/PortfolioDemo'))
+const Simulator = lazy(() => import('./sections/Simulator'))
 
 export default function App() {
   const [lang, setLang] = useState<UiLang>(() => langFromPath(window.location.pathname))
-  const [signup, setSignup] = useState<{ open: boolean; plan: string }>({ open: false, plan: 'starter' })
+  const [invest, setInvest] = useState<Property | null>(null)
 
   useEffect(() => {
     const onPop = () => setLang(langFromPath(window.location.pathname))
@@ -30,31 +31,26 @@ export default function App() {
     window.history.pushState({}, '', langPath(l) + window.location.hash)
   }, [])
 
-  const openSignup = useCallback((plan = 'starter') => setSignup({ open: true, plan }), [])
-
   return (
     <>
       <SeoHead lang={lang} />
-      <a
-        href="#contenido"
-        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:shadow-lg"
-      >
+      <a href="#contenido" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:shadow-lg">
         Saltar al contenido
       </a>
-      <Navbar lang={lang} onLang={changeLang} onSignup={() => openSignup()} />
+      <Navbar lang={lang} onLang={changeLang} />
       <main id="contenido">
-        <Hero lang={lang} onSignup={openSignup} />
-        <Marquee />
-        <Integrations />
+        <Hero lang={lang} />
+        <Catalog onInvest={setInvest} />
+        <HowItWorks />
         <Suspense fallback={<div className="h-96" aria-hidden />}>
-          <VisualEditor />
-          <RoiCalculator onSignup={() => openSignup('pro')} />
-          <Pricing onSignup={openSignup} />
-          <Faq lang={lang} onSignup={() => openSignup()} />
+          <PortfolioDemo />
+          <Simulator />
         </Suspense>
+        <Faq />
+        <Contact />
       </main>
       <Footer />
-      <SignupModal open={signup.open} plan={signup.plan} onClose={() => setSignup((s) => ({ ...s, open: false }))} />
+      <InvestModal property={invest} onClose={() => setInvest(null)} />
     </>
   )
 }

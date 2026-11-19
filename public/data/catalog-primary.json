@@ -1,0 +1,8 @@
+{
+  "data": [
+    { "uuid": "rem-zgz-01", "name": "Piso en San José", "ciudad": "Zaragoza", "barrio": "San José", "coordinates": { "lat": 41.6396, "lng": -0.8672 }, "category": "Rent", "targetAmount": "132.000 €", "raised": "40.920 €", "annualReturn": "7,6 %", "minAmount": 50, "summary": "Vivienda de 2 habitaciones con inquilino estable." },
+    { "uuid": "rem-mad-01", "name": "Local en Lavapiés", "ciudad": "Madrid", "barrio": "Lavapiés", "coordinates": { "lat": 40.4086, "lng": -3.7004 }, "category": "Rent", "propertyType": "local", "targetAmount": "298.000 €", "raised": "89.400 €", "annualReturn": "6,9 %", "minAmount": 100, "summary": "Local en zona de alta afluencia." },
+    { "uuid": "rem-vlc-01", "name": "Piso en El Carmen", "ciudad": "Valencia", "barrio": "El Carmen", "coordinates": { "lat": 39.4784, "lng": -0.3817 }, "category": "Sale", "targetAmount": "215.000 €", "raised": "21.500 €", "annualReturn": "10,4 %", "minAmount": 100, "summary": "Reforma y venta en el casco histórico." },
+    { "title": "registro corrupto" }
+  ]
+}

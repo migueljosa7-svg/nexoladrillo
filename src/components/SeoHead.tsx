@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { Helmet } from 'react-helmet-async'
-import { AGGREGATE_RATING, CONTACT_EMAIL, OG_LOCALE, SITE_NAME, SITE_URL, UI_LANGS, langUrl, type UiLang } from '../config'
+import { CONTACT_EMAIL, OG_LOCALE, SITE_NAME, SITE_URL, UI_LANGS, langUrl, type UiLang } from '../config'
 import { DICT } from '../i18n'
 import { FAQ } from '../data/faq'
 
@@ -14,39 +14,7 @@ export default function SeoHead({ lang }: { lang: UiLang }) {
   }, [])
 
   const jsonLd = [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'SoftwareApplication',
-      name: SITE_NAME,
-      url,
-      applicationCategory: 'BusinessApplication',
-      operatingSystem: 'Web',
-      description: d.description,
-      inLanguage: lang,
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: AGGREGATE_RATING.ratingValue,
-        ratingCount: AGGREGATE_RATING.ratingCount,
-        bestRating: '5',
-        worstRating: '1',
-      },
-      offers: [
-        { '@type': 'Offer', name: 'Free', price: '0', priceCurrency: 'EUR' },
-        { '@type': 'Offer', name: 'Starter', price: '13.50', priceCurrency: 'EUR' },
-        { '@type': 'Offer', name: 'Business', price: '26.10', priceCurrency: 'EUR' },
-        { '@type': 'Offer', name: 'Pro', price: '71.10', priceCurrency: 'EUR' },
-        { '@type': 'Offer', name: 'Enterprise', price: '269', priceCurrency: 'EUR' },
-      ],
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      mainEntity: FAQ.map((f) => ({
-        '@type': 'Question',
-        name: f.q,
-        acceptedAnswer: { '@type': 'Answer', text: f.a },
-      })),
-    },
+    { '@context': 'https://schema.org', '@type': 'WebSite', name: SITE_NAME, url: SITE_URL, inLanguage: lang },
     {
       '@context': 'https://schema.org',
       '@type': 'Organization',
@@ -57,14 +25,12 @@ export default function SeoHead({ lang }: { lang: UiLang }) {
     },
     {
       '@context': 'https://schema.org',
-      '@type': 'LocalBusiness',
-      '@id': `${SITE_URL}/#business`,
-      name: SITE_NAME,
-      url: SITE_URL,
-      image: `${SITE_URL}/og-image.svg`,
-      email: CONTACT_EMAIL,
-      priceRange: '€0 - €269',
-      areaServed: 'Worldwide',
+      '@type': 'FAQPage',
+      mainEntity: FAQ.map((f) => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      })),
     },
   ]
 

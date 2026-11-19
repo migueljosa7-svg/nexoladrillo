@@ -1,40 +1,32 @@
 import { useState } from 'react'
-import { Globe2, Menu, X } from 'lucide-react'
+import { Building2, Menu, X } from 'lucide-react'
 import { UI_LANGS, type UiLang } from '../config'
 import { DICT, UI_LANG_LABEL } from '../i18n'
 import { Button } from './ui'
 
 export function Logo({ dark }: { dark?: boolean }) {
   return (
-    <a href="#top" aria-label="Nexo Translate, inicio" className="flex items-center gap-2 font-bold">
+    <a href="#top" aria-label="NexoLadrillo, inicio" className="flex items-center gap-2 font-bold">
       <span className="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-brand to-brand-2 text-white">
-        <Globe2 size={18} aria-hidden />
+        <Building2 size={18} aria-hidden />
       </span>
       <span className={dark ? 'text-white' : 'text-slate-900'}>
-        Nexo<span className="text-brand-2">Translate</span>
+        Nexo<span className="text-brand-2">Ladrillo</span>
       </span>
     </a>
   )
 }
 
-export default function Navbar({
-  lang,
-  onLang,
-  onSignup,
-}: {
-  lang: UiLang
-  onLang: (l: UiLang) => void
-  onSignup: () => void
-}) {
+export default function Navbar({ lang, onLang }: { lang: UiLang; onLang: (l: UiLang) => void }) {
   const d = DICT[lang]
   const [open, setOpen] = useState(false)
   const links = [
-    ['#demo', d.navDemo],
-    ['#integraciones', d.navIntegrations],
-    ['#editor', d.navEditor],
-    ['#roi', d.navRoi],
-    ['#precios', d.navPricing],
+    ['#invertir', d.navInvest],
+    ['#como-funciona', d.navHow],
+    ['#portfolio', d.navPortfolio],
+    ['#simulador', d.navSim],
     ['#faq', d.navFaq],
+    ['#contacto', d.navContact],
   ]
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-slate-200/70 bg-white/85 backdrop-blur-lg">
@@ -50,14 +42,11 @@ export default function Navbar({
           ))}
         </ul>
         <div className="flex items-center gap-2">
-          <label className="sr-only" htmlFor="ui-lang">
-            Idioma de la web
-          </label>
+          <label className="sr-only" htmlFor="ui-lang">Idioma de la web</label>
           <select
             id="ui-lang"
             value={lang}
             onChange={(e) => onLang(e.target.value as UiLang)}
-            aria-label="Idioma de la web"
             className="min-h-11 rounded-lg border border-slate-300 bg-white px-2 text-sm text-slate-800"
           >
             {UI_LANGS.map((l) => (
@@ -66,9 +55,9 @@ export default function Navbar({
               </option>
             ))}
           </select>
-          <Button onClick={onSignup} aria-label={d.cta} className="hidden sm:inline-flex">
-            {d.cta}
-          </Button>
+          <a href="#invertir" className="hidden sm:block">
+            <Button tabIndex={-1}>{d.cta}</Button>
+          </a>
           <button
             type="button"
             className="grid h-11 w-11 place-items-center rounded-lg border border-slate-300 lg:hidden"
@@ -91,15 +80,6 @@ export default function Navbar({
               </li>
             ))}
           </ul>
-          <Button
-            onClick={() => {
-              setOpen(false)
-              onSignup()
-            }}
-            className="w-full"
-          >
-            {d.cta}
-          </Button>
         </div>
       )}
     </header>
