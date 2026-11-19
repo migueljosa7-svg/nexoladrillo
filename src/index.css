@@ -90,3 +90,19 @@ input[type='range'] {
     scroll-behavior: auto !important;
   }
 }
+
+.nx-pin {
+  display: inline-block;
+  min-width: 48px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #4f46e5, #7c3aed);
+  color: #fff;
+  font: 700 12px/1.2 system-ui, sans-serif;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(79, 70, 229, 0.4);
+  border: 2px solid #fff;
+}
+.leaflet-container {
+  font-family: inherit;
+}

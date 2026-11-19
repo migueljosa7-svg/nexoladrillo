@@ -1,17 +1,18 @@
 import { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { ChevronDown } from 'lucide-react'
-import { FAQ } from '../data/faq'
+import { useI18n } from '../i18n'
 import { Reveal, SectionHead, rise } from '../components/ui'
 
 export default function Faq() {
+  const { m } = useI18n()
   const [open, setOpen] = useState<number | null>(0)
   return (
-    <section id="faq" className="bg-white py-20 sm:py-24">
+    <section id="faq" className="bg-snow py-20 sm:py-24">
       <Reveal className="mx-auto max-w-3xl px-4 sm:px-6">
-        <SectionHead eyebrow="FAQ" title="Preguntas frecuentes" />
+        <SectionHead eyebrow={m.faq.eyebrow} title={m.faq.title} />
         <motion.div variants={rise} className="space-y-3">
-          {FAQ.map((f, i) => {
+          {m.faq.items.map((f, i) => {
             const on = open === i
             return (
               <div key={f.q} className="rounded-xl border border-slate-200 bg-white">
